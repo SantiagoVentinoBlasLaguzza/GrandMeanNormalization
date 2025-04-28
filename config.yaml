@@ -1,0 +1,12 @@
+seed: 42
+n_splits: 5
+batch_size: 16
+
+apply_transforms: true     # Aplicar fisher, sqrt, log, etc
+apply_zscore: true         # Aplicar normalización z-score después de transformar
+
+transformations:
+  fisher_correlation: true  # Fisher z-transform al canal de correlación
+  sqrt_mi: true             # Raíz cuadrada al canal de MI
+  log_granger: true         # log(1+x) al canal de Granger
+  sqrt_dcv: true            # Raíz cuadrada al canal de DCV
